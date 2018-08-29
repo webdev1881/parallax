@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0
+}
+html {
+  box-sizing: border-box;
+  overflow: hidden
+}
+body {
+  height: 100vh;
+  margin: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 1px
+}
+img {
+  width: 102%;
+  display: block
+}
+.parallax {
+  transform-style: preserve-3d
+}
+.back {
+  transform: translateZ(-1px) scale(2);
+  position: relative;
+  top: calc(((100vh - 50vw)/ 4) * -2)
+}
+.front {
+  position: relative;
+  background-color: #999;
+  padding: 14em 1em;
+  z-index: 2
+}
+.fronth2 {
+  text-align: justify
+}
+.tit {
+  transform: translateZ(-.5px) scale(2);
+  position: absolute;
+  top: 10em;
+  width: 100%;
+  text-align: center;
+  color: #fff
+}
